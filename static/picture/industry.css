@@ -1,0 +1,111 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*产品*/
+
+.industry-img {
+    width: 50%;
+    height: 315px;
+    background: url(../images/industry-img.jpg)no-repeat center;
+    float: right;
+}
+
+.industry-con-img img{width:100%;}
+
+.industry-con-both p{
+    color:#232323;
+    text-align: center;
+    line-height: 25px;
+   
+}
+
+.industry-con-both>div{
+
+}
+
+.industry-con-both:after{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
+
+.industry-con-both{
+    margin:0 -15px;
+    line-height:25px;
+    color:#858585;
+    font-size:12px;
+}
+
+.industry-con-cen{
+    margin-top: 35px;
+    margin-right: 30px;
+}
+
+.industry-li{
+    display: block;
+}
+
+
+
+.industry-con-into p{    text-align: left;}
+
+.industry-con-into{    margin: 0 15px;}
+
+@media (max-width: 1268px){
+
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 1024px){
+    .industry-con-both img{width:100%}
+
+}
+
+@media (max-width: 992px){
+
+    .industry-con-both img{width:100%}
+
+}
+
+
+@media (max-width: 768px) {
+    .industry-con-both img{width:100%}
+
+}
+
+
+@media (max-width: 767px) {
+.industry-con-both p{
+    margin-bottom: 0px;
+}
+
+.industry-img {
+            height: 103px;
+        background-size: cover;
+    width: 100%;
+
+}
+
+.industry-con-cen{
+    margin:30px 15px 0;
+}
+
+}
+
+
+
+@media (max-width: 360px) {
+
+
+
+}
+
+
+@media (min-width: 992px){
+
+
+}
+
+
+
+
+

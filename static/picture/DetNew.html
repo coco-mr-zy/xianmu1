@@ -1,0 +1,980 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>气动阀门执行器故障解决 - 智鹏控制阀门有限公司</title>
+    <meta name="keywords" />
+    <meta name="description" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=0">
+
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="static/css/newsagin.css" rel="stylesheet" type="text/css">
+    <link href="static/css/news.css" rel="stylesheet" type="text/css">
+    <link href="static/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="static/css/swiper.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/animate.min.css" rel="stylesheet" type="text/css" />
+    <link href="static/css/iconfont.css" rel="stylesheet">
+    <script src="static/js/jquery.min.js"></script>
+
+
+
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-pagination-bullet {
+            width: 15%;
+            height: 1px;
+            background: #fff;
+            border-radius: inherit;
+        }
+
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #fff;
+            height: 3px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="ahead">
+
+<link href="/favicon.ico" rel="shortcut icon">
+<div class="ahead-top"></div>
+<div class="ahead-numb ahead1">
+    <div class="container">
+        <div class="row">
+            <div class="navbar-header ">
+                <a href="/" class="navbar-img">
+
+                </a>
+            </div>
+
+            <div class="ipad-nav">
+                <div class="floatright nav-mp-Menu2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <input type="hidden" id="muenNum3" value="1">
+                <div class="ma-down-nav2">
+                    <ul>
+                        <li  onclick="self.location.href='/About'" ><a href="/about" class="a-none">关于智鹏</a></li>
+                        <li  onclick="self.location.href = '/product'"><a href="/product" class="a-none">产品展示</a></li>
+                        <li  onclick="self.location.href = '/news'"><a href="/news" class="a-none">新闻中心</a></li>
+                        <li  onclick="self.location.href = '/industry'"><a href="/quality" class="a-none">品质保障</a></li>
+                        <li  onclick="self.location.href = '/quality'"><a href="/industry" class="a-none">行业应用</a></li>
+                        <li  onclick="self.location.href = '/personnel'"><a href="/personnel" class="a-none">人力资源</a></li>
+                        <li  onclick="self.location.href = '/contact'"><a href="/contact" class="a-none">联系我们</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="nav-list navbar-right">
+
+                <div class="nav-seach">
+                    <div class="seach-both">
+                        <div class="chinese ">
+                            <img src="static/picture/china.svg" width="20" height="20" alt="">
+                        </div>
+                        <div class="english">
+                            <img src="static/picture/english.png" width="20" height="20" alt="">
+                        </div>
+
+                        <div class="nav-form">
+                            <input type="text" placeholder="search..."
+                                   class="input-search">
+                            <button type="submit" class="seach pointer"></button>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+
+                <ul>
+
+
+
+                    <li class="nav-li" id="AboutNav">
+                        <div class="nav-delta"></div>
+                        <a href="/about" class="a-none"><span>关于智鹏</span></a>
+
+                        <div class="nav-li-col li-col-1">
+                            <div class="nav-li-main">
+                              
+                                    <p>
+                                            <a href="/About/1005">董事长致辞</a>
+                                       
+                                    </p>
+                                    <p>
+                                            <a href="/About/1006">企业简介</a>
+                                       
+                                    </p>
+                                    <p>
+                                            <a href="/About/1008">组织架构</a>
+                                       
+                                    </p>
+                                    <p>
+                                            <a href="/Honor/1009">荣誉资质</a>
+                                       
+                                    </p>
+                                    <p>
+                                            <a href="/Video/1010">企业视频</a>
+                                       
+                                    </p>
+
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/product" class="a-none"><span>产品展示</span></a>
+                        <div class="nav-li-col  li-col-2">
+                            <div class="nav-li-main">
+                                    <p>
+                                        <a href="/PSlist/18">控制阀系列</a>
+                                    </p>
+                                    <p>
+                                        <a href="/PSlist/19">衬氟手动阀系列</a>
+                                    </p>
+                                    <p>
+                                        <a href="/PSlist/20">衬氟管件系列</a>
+                                    </p>
+                                    <p>
+                                        <a href="/PSlist/21">通用阀系列</a>
+                                    </p>
+
+
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/news" class="a-none"><span>新闻中心</span></a>
+                        <div class="nav-li-col li-col-3">
+                            <div class="nav-li-main">
+                                    <p>
+                                        <a href="/News/1013">企业新闻</a>
+                                    </p>
+                                    <p>
+                                        <a href="/News/1016">行业资讯</a>
+                                    </p>
+                                    <p>
+                                        <a href="/News/1017">技术文章</a>
+                                    </p>
+
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/industry" class="a-none"><span>品质保障</span></a>
+                        <div class="nav-li-col li-col-4">
+                            <div class="nav-li-main">
+                                    <p>
+                                        <a href="/industry/1011">技术研发</a>
+                                    </p>
+                                    <p>
+                                        <a href="/industry/1012">生产设备</a>
+                                    </p>
+                                    <p>
+                                        <a href="/industry/1013">检测设备</a>
+                                    </p>
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/quality" class="a-none"><span>行业应用</span></a>
+                        <div class="nav-li-col li-col-5">
+                            <div class="nav-li-main">
+                                    <p>
+                                        <a href="/Detquality/120">电力行业</a>
+                                      
+                                    </p>
+                                    <p>
+                                        <a href="/Detquality/119">制药行业</a>
+                                      
+                                    </p>
+                                    <p>
+                                        <a href="/Detquality/118">冶金行业</a>
+                                      
+                                    </p>
+                                    <p>
+                                        <a href="/Detquality/117">化纤行业</a>
+                                      
+                                    </p>
+                                    <p>
+                                        <a href="/Detquality/116">化工行业</a>
+                                      
+                                    </p>
+                                    <p>
+                                        <a href="/Detquality/115">石油天然气</a>
+                                      
+                                    </p>
+                            </div>
+
+
+
+
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/personnel" class="a-none"><span>人力资源</span></a>
+                        <div class="nav-li-col  li-col-6">
+                            <div class="nav-li-main">
+                                    <p>
+                                            <a href="/personnel/1020">人才理念</a>
+                                       
+                                    </p>
+                                    <p>
+                                            <a href="/HrInfoList/1021">企业招聘</a>
+                                       
+                                    </p>
+
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-li">
+                        <div class="nav-delta"></div>
+                        <a href="/contact" class="a-none">联系我们</a>
+                        <div class="nav-li-col li-col-7">
+                            <div class="nav-li-main">
+                             
+                                <p><a href="/NewWrok">营销网络</a></p>
+                                <p><a href="/feedback">意见反馈</a></p>
+                                <p><a href="/Contact">联系我们</a></p>
+                               
+
+                            </div>
+                            <div class="nav-li-green"></div>
+                        </div>
+                    </li>
+
+                    <div class="float-block"></div>
+                </ul>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="ahead-mp">
+    <div class="ahead-mp-cul">
+        <div class="ahead-right-mp">
+            <div class="chinese ">
+                <img src="static/picture/chinese.png" alt="">
+            </div>
+            <div class="english">
+                <img src="static/picture/english.png" alt="">
+            </div>
+
+            <div class="search-mp">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ahead-mp-logo">
+    <div class="floatright nav-mp-Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <input type="hidden" id="muenNum" value="1">
+    <a href="/" class="a-none">
+        <img src="static/picture/logo-mp.png" alt=""><a>
+
+            <div class="ma-down-nav">
+                <ul>
+                    <li onclick="self.location.href='/About'" ><a href="/About" class="a-none">关于智鹏</a></li>
+                    <li onclick="self.location.href = '/product'"><a href="/product" class="a-none">产品展示</a></li>
+                    <li onclick="self.location.href = '/news'"><a href="/news" class="a-none">新闻中心</a></li>
+                    <li onclick="self.location.href = '/industry'"><a href="/industry" class="a-none">品质保障</a></li>
+                    <li onclick="self.location.href = '/quality'"><a href="/quality" class="a-none">行业应用</a></li>
+                    <li onclick="self.location.href = '/personnel'"><a href="/personnel" class="a-none">人力资源</a></li>
+                    <li onclick="self.location.href = '/contact'"><a href="/contact" class="a-none">联系我们</a></li>
+
+                </ul>
+            </div>
+</div>
+<script>
+
+
+    $(document).ready(function () {
+
+
+        $(".icon-cha").click(function () {
+
+            $(".Online-translation").css("display", "none")
+
+        })
+
+        $(".nav-mp-Menu").click(function () {
+
+            $("#muenNum").attr("value", parseInt($("#muenNum").val()) + 1);
+            if (parseInt($("#muenNum").val()) % 2 == 0) {
+
+                $(".nav-mp-Menu").addClass("nav-mp-intro")
+                $(".ma-down-nav").animate({ height: "370px" })
+            }
+            else {
+                $(".nav-mp-Menu").removeClass("nav-mp-intro")
+                $(".ma-down-nav").animate({ height: "0px" })
+            }
+
+
+        })
+
+        $(".nav-mp-Menu2").click(function () {
+
+            $("#muenNum3").attr("value", parseInt($("#muenNum3").val()) + 1);
+            if (parseInt($("#muenNum3").val()) % 2 == 0) {
+
+                $(".nav-mp-Menu2").addClass("nav-mp-intro2")
+                $(".ma-down-nav2").animate({ height: "370px" })
+            }
+            else {
+                $(".nav-mp-Menu2").removeClass("nav-mp-intro2")
+                $(".ma-down-nav2").animate({ height: "0px" })
+            }
+
+
+        })
+
+
+
+        $(".nav-li").mouseover(function () {
+            $(".ahead-numb").removeClass("ahead1 ahead2 ahead3")
+            $(".ahead-numb").addClass("ahead1 ")
+
+        })
+
+
+    });
+</script>
+    </div>
+
+    <div class="content-nav">
+        <div class="content-title">
+
+        </div>
+
+        <div class="news-body-img">
+        </div>
+        <div class="container breadtitle">
+            <div class="row">
+                <p>您的位置：首页 - 新闻中心 - 新闻中心</p>
+                <p>新闻中心</p>
+            </div>
+        </div>
+        <div class="nav-son">
+            <ul>
+                <li>
+                    <span>新闻中心<i></i></span>
+                    <ul class="nav-son-li">
+                            <li>
+                                <a href="/news/1013">企业新闻</a>
+                            </li>
+                            <li>
+                                <a href="/news/1016">行业资讯</a>
+                            </li>
+                            <li>
+                                <a href="/news/1017">技术文章</a>
+                            </li>
+
+                    </ul>
+                </li>
+            </ul>
+            <input type="hidden" id="zar" value="1">
+        </div>
+
+    </div>
+
+    <div class="content-body">
+        <div class="content-main">
+            <div class="container">
+                <div class="row">
+                    <div class="content-con-column col-xs-12 col-md-8 col-sm-8 col-lg-8">
+                        <div class="row">
+
+                            <div class="content-con  content-con-into" >
+                                <p style="display:block">气动阀门执行器故障解决</p>
+
+                                <div class="news-con">
+                                    <p>
+                                        <span>2019-05-09</span>
+                                        <span>阅读： 282</span>
+                                    </p>
+                                    <p style="text-indent:2em;">
+	气动阀门执行器故障解决都会去选择比较适合的气动执行器，性价比较高的气动执行器，那么首先就要了解执行器的种类，执行器可分为气动执行器与电动执行器，比较常用的执行器也就是这两种，我们选购的时候都会选择气动执行器。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	然后我们要根据气源的大小来选着执行器，转动阀门所需的扭矩，大小转不懂，太大阀门寿命不长。一般给扭矩留出30%的余量就OK了。气动执行器从文字上就能看出这类是通过气压力来操作的执行装置。与电动执行器先比，能适应更多的环境之中，合理的结构让其负载力更大，实现了对高力矩输出的目标。同时比电动执行器而言，动作迅速，反应也较快。当然，电动执行器也有众多优势是气动执行器所不能比拟的，气动执行器的长处也是当下电动执行器所不具备的，俩者都有各自缺点与优点。因此，在未来不断进行科技下，两者的性价比将会得到更大的提高。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	其次我们对于安装的平台进行考核，每个环境选择执行器，对于执行器都是有一个标准的，我们要根据阀门找到对应的标准就不会错。而作为一种气动执行机构，其实它在阀门中表现出来的作用就是让阀装置在使用的时候更加的方便。而由于气动执行器的接入使得使得这种阀门在管道中运作的时候能够带动起阀体部件的快速连动，具有一定的自动化效果，而且由于执行机构本身是具有能源驱动的，所以对于阀门的阀体启闭件的驱动也是具有一定的价值的。这种阀门由于流体阻力小被使用到流体管道中起到开启和关闭的作用。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	常见的故障有阀体不动作、阀门无法关到零位、气动执行器无反馈信号、信号压力不稳定等。还有一些较为特殊的故障，比如气动执行器控制阀振动。接下来我们主要分析特殊故障控制阀振动的原因以及处理措施。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	气动阀门执行器故障解决
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	气动执行器控制阀振动会造成控制系统无法正常工作，其振动原因主要有以下3个：
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	1、外来振源，即该设备管道本身就有振动。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	2、气动执行器控制阀的选用不符合选型的要求，比如流量特性不适合、阀口径偏大、弹簧刚度较差等等，造成控制阀振动。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	3、受到流体侵蚀从而产生振动。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	气动阀门执行器故障解决处理措施：如果发现是设备管道本身就有的振动，可以对设备管道进行清扫重新调整，使其振动消失。如果是气动执行器控制阀本身问题，可以采用限流孔板去吸收部分压降，降低节流速度，克服阀振动，且限流孔板还可以改变系统固有的频率，避免控制阀固有频率与系统固有频率相接近而产生振动。
+</p>
+<p style="text-indent:2em;">
+	<br />
+</p>
+<p style="text-indent:2em;">
+	而作为其中的启闭装置，这种阀门安装的气动执行机构具有利用压缩气体，推动活塞让阀门内部与之相连的阀杆起到作用，驱动球阀球体进行运动，从而起到了调节管道流体介质的作用。而作为其中的启闭件，这种球体绕球阀的轴线作旋转运动，对于介质的输送有一定的效果。球阀的特点在于耐磨、密封性能较好，并且由于阻力较小，所以内部阀体受到的磨损较小，使用寿命也比较长，这样的特点让这种气动阀门在管道的使用上更加的“得心应手”。
+</p>
+<p>
+	<br />
+</p>
+                                    </div>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="contents-sidebar col-md-4 col-sm-4 col-lg-4">
+                        <div class="row">
+                            <div class="contents-sidebar-title">
+                                <p>企业新闻<span style="text-transform:uppercase">News</span></p>
+                                <p>一</p>
+                            </div>
+
+                            <div class="contents-sidebar-menu">
+                                <ul>
+                                        <li>
+                                            <span><a href="/news/1013">企业新闻</a></span>
+                                        </li>
+                                        <li>
+                                            <span><a href="/news/1016">行业资讯</a></span>
+                                        </li>
+                                        <li>
+                                            <span><a href="/news/1017">技术文章</a></span>
+                                        </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+<div class="bottom">
+    <div class="container">
+        <div class="row rowbottom">
+            <div class="footer-nav">
+                <div class="foot-list">
+                    <dl>
+                        <dt><a href="/About/1006">关于智鹏</a> </dt>
+
+                            <dd>
+                                    <a href="/About/1005">董事长致辞</a>
+                            </dd>
+                            <dd>
+                                    <a href="/About/1006">企业简介</a>
+                            </dd>
+                            <dd>
+                                    <a href="/About/1008">组织架构</a>
+                            </dd>
+                            <dd>
+                                    <a href="/About/1009">荣誉资质</a>
+                            </dd>
+                            <dd>
+                                    <a href="/Video/1010">企业视频</a>
+                            </dd>
+
+                       
+                        
+                    </dl>
+
+                    <dl>
+                        <dt><a href="/product">产品展示</a></dt>
+                            <dd>
+                                <a href="/PSlist/18">控制阀系列</a>
+                            </dd>
+                            <dd>
+                                <a href="/PSlist/19">衬氟手动阀系列</a>
+                            </dd>
+                            <dd>
+                                <a href="/PSlist/20">衬氟管件系列</a>
+                            </dd>
+                            <dd>
+                                <a href="/PSlist/21">通用阀系列</a>
+                            </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="/News">新闻中心</a></dt>
+                            <dd>
+
+                                <a href="/News/1013">企业新闻</a>
+                            </dd>
+                            <dd>
+
+                                <a href="/News/1016">行业资讯</a>
+                            </dd>
+                            <dd>
+
+                                <a href="/News/1017">技术文章</a>
+                            </dd>
+                    </dl>
+
+                    <dl>
+                        <dt><a href="/industry">品质保障</a></dt>
+                            <dd>
+                                <a href="/industry/1011">技术研发</a>
+                            </dd>
+                            <dd>
+                                <a href="/industry/1012">生产设备</a>
+                            </dd>
+                            <dd>
+                                <a href="/industry/1013">检测设备</a>
+                            </dd>
+                      
+                    </dl>
+
+                    <dl>
+                        <dt><a href="/quality">行业应用</a></dt>
+                            <dd>
+                                <a href="/Detquality/120">电力行业</a>
+
+                            </dd>
+                            <dd>
+                                <a href="/Detquality/119">制药行业</a>
+
+                            </dd>
+                            <dd>
+                                <a href="/Detquality/118">冶金行业</a>
+
+                            </dd>
+                            <dd>
+                                <a href="/Detquality/117">化纤行业</a>
+
+                            </dd>
+                            <dd>
+                                <a href="/Detquality/116">化工行业</a>
+
+                            </dd>
+                            <dd>
+                                <a href="/Detquality/115">石油天然气</a>
+
+                            </dd>
+                        
+                    </dl>
+
+                    <dl>
+                        <dt><a href="/personnel">人力资源</a></dt>
+                            <dd>
+                                    <a href="/personnel/1020">人才理念</a>
+                               
+                            </dd>
+                            <dd>
+                                    <a href="/HrInfoList/1021">企业招聘</a>
+                               
+                            </dd>
+
+
+                    </dl>
+
+                    <dl>
+
+                        
+                        <dt><a href="/Contact">联系我们</a></dt>
+                        <dd>
+                            <a href="/NewWrok">营销网络</a>
+                        </dd>
+                          <dd>
+                            <a href="/feedback">意见反馈</a>
+                        </dd>
+                        <dd>
+                            <a href="/Contact">联系我们</a>
+                        </dd>
+                    </dl>
+
+                    <div class="weixing floatright">
+                        <div class="">
+                            <img src="static/picture/iphone.png" alt="">
+                            <span>访问手机站</span>
+                        </div>
+                        <img src="static/picture/weixing.jpg"  width="150" alt="">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-title">
+        <div class="container">
+            <div class="row">
+                <div class="footer-bot">
+                    <span>2017© 智鹏自控阀门有限公司版权所有</span>
+                    <span>数据统计</span>
+                    
+                    <span><a href="http://beian.miit.gov.cn" rel="nofollow" target="_blank">浙ICP备17036360号-1</a> </span>
+                    <span>浙公网安备 33030302000634号</span>
+                    <span class="floatright">技术支持：<span><a href="http://www.prcvm.com/"  class="a-none" target="_blank" >中阀传媒</a><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276279768'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1276279768%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script></span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--移动端底部-->
+<div class="panel-group visible-xs-block" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <p class="panel-title">
+                <a href="/About">关于智鹏</a>
+            </p>
+
+        </div>
+
+        <div id="collapseOne" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                            <a href="/About/1005">董事长致辞</a>
+
+                    </p>
+                    <p>
+                            <a href="/About/1006">企业简介</a>
+
+                    </p>
+                    <p>
+                            <a href="/About/1008">组织架构</a>
+
+                    </p>
+                    <p>
+                            <a href="/About/1009">荣誉资质</a>
+
+                    </p>
+                    <p>
+                            <a href="/Video/1010">企业视频</a>
+
+                    </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="disblock panel-heading pane2 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+            <p>
+                <a href="/product">产品展示</a>
+            </p>
+        </div>
+
+
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                        <a href="/PSlist/18">控制阀系列</a>
+                    </p>
+                    <p>
+                        <a href="/PSlist/19">衬氟手动阀系列</a>
+                    </p>
+                    <p>
+                        <a href="/PSlist/20">衬氟管件系列</a>
+                    </p>
+                    <p>
+                        <a href="/PSlist/21">通用阀系列</a>
+                    </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="disblock panel-heading pane3 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+            <p>
+                <a href="/news">企业新闻</a>
+            </p>
+        </div>
+
+
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                        <a href="/News/1013">企业新闻</a>
+                    </p>
+                    <p>
+                        <a href="/News/1016">行业资讯</a>
+                    </p>
+                    <p>
+                        <a href="/News/1017">技术文章</a>
+                    </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="disblock panel-heading pane4 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">
+            <p>
+                <a href="/industry">品质保障</a>
+            </p>
+        </div>
+
+
+        <div id="collapsefour" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                        <a href="/industry/1011">技术研发</a>
+                    </p>
+                    <p>
+                        <a href="/industry/1012">生产设备</a>
+                    </p>
+                    <p>
+                        <a href="/industry/1013">检测设备</a>
+                    </p>
+
+            </div>
+        </div>
+    </div>
+
+        <div class="panel panel-default">
+            <div class="disblock panel-heading pane5 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapsefive">
+                <p>
+                    <a href="/quality">行业应用</a>
+                </p>
+            </div>
+      
+
+        <div id="collapsefive" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                        <a href="/Detquality/120">电力行业</a>
+
+                    </p>
+                    <p>
+                        <a href="/Detquality/119">制药行业</a>
+
+                    </p>
+                    <p>
+                        <a href="/Detquality/118">冶金行业</a>
+
+                    </p>
+                    <p>
+                        <a href="/Detquality/117">化纤行业</a>
+
+                    </p>
+                    <p>
+                        <a href="/Detquality/116">化工行业</a>
+
+                    </p>
+                    <p>
+                        <a href="/Detquality/115">石油天然气</a>
+
+                    </p>
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="disblock panel-heading pane6 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapsesix">
+            <p>
+                <a href="/personnel">人才理念</a>
+            </p>
+        </div>
+
+
+        <div id="collapsesix" class="panel-collapse collapse">
+            <div class="panel-body">
+                    <p>
+                        <a href="/personnel/1020">人才理念</a>
+                    </p>
+                    <p>
+                        <a href="/personnel/1021">企业招聘</a>
+                    </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="disblock panel-heading pane7 a-none" data-toggle="collapse" data-parent="#accordion" href="#collapseseven">
+            <p>
+                <a href="">联系我们</a>
+            </p>
+        </div>
+
+
+        <div id="collapseseven" class="panel-collapse collapse">
+            <div class="panel-body">
+                <p><a href="feedback">营销网络</a></p>
+                <p><a href="NewWrok">意见反馈</a></p>
+                <p><a href="Contact">联系我们</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="mp-foot">
+        <p>Copyright 2017 智鹏自控阀门有限公司</p>
+        <p>
+            浙ICP备17036360号-1 数据统计 技术支持：
+            <a href="www.prcvm.com" class="a-none" target="_blank">中阀传媒</a>
+            <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1276279768'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s5.cnzz.com/z_stat.php%3Fid%3D1276279768%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+        </p>
+        <input type="hidden" id="lol1" value="1">
+        <input type="hidden" id="lol2" value="1">
+        <input type="hidden" id="lol3" value="1">
+        <input type="hidden" id="lol4" value="1">
+        <input type="hidden" id="lol5" value="1">
+        <input type="hidden" id="lol6" value="1">
+        <input type="hidden" id="lol7" value="1">
+    </div>
+</div>
+    <script>
+
+			$(document).ready(function() {
+
+				$(".panel-heading").click(function() {
+
+					$(this).addClass("panel-head-ho")
+				})
+			})
+
+        	$(".panel-heading").click(function () {
+
+
+			    if ($(this).hasClass("panel_head_ho") == true) {
+			        $(".panel-heading").removeClass("panel_head_ho");
+			        $(this).removeClass("panel_head_ho");
+			    }
+			    else {
+
+                $(".panel-heading").removeClass("panel_head_ho");
+                $(this).addClass("panel_head_ho");
+
+			    }
+			})
+
+    </script>
+
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <script src="static/js/swiper.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/nav.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    $(document).ready(function () {
+        $(".contents-sidebar-menu>ul>li>span").click(function () {
+            if ("$(this).css()==0") {
+                $(".contents-sidebar-down").animate({ height: "0" }, "0");
+                $(this).parent().children(".contents-sidebar-down").animate({ height: "93px" })
+            }
+            else {
+                $(".contents-sidebar-down").animate({ height: "0" }, "0");
+                $(this).parent().children(".contents-sidebar-down").animate({ height: "0px" })
+            }
+
+        })
+    })
+    </script>
+</body>
+
+
+</html>

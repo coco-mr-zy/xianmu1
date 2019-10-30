@@ -1,0 +1,234 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*产品*/
+
+.about-img {
+    width: 50%;
+    height: 315px;
+    background: url(../images/about.jpg)no-repeat center;
+    float: right;
+}
+
+.about-con-text{
+    color:#858585;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height:25px;
+    margin-top:30px;
+}
+
+.about-con-both{
+    margin:0 -15px;
+}
+
+.about-con-both:after{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
+.about-img-text{margin-top: 28px;}
+.about-con-cen{margin-right: 50px;line-height: 1.5;}
+
+
+.content-abstract-text {
+    padding: 26px 0 38px;
+    color: #858585;
+    margin-right: 40px;
+    font-size: 12px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.about-abstract-both img{
+    width:100%;
+}
+
+.about-abstract-both{
+    margin-right:40px;
+}
+
+.about-abstract-text p:before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #a61f22;
+    margin-right: 10px;
+}
+
+
+.about-abstract-text{
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.about-abstract-text span{
+    color:#a61f22;
+    font-weight: bold;
+}
+
+.about-abstract-text p{
+    margin-top:20px;
+    color:#858585;
+    font-size: 12px;
+    line-height: 2;
+}
+
+.about-abstract-text>div{
+    font-size: 14px;
+    color:#858585;
+    margin-top: 35px;
+    text-indent:2em;
+    line-height: 2;
+    margin-bottom: 50px;
+    text-align: justify;
+}
+
+.content-video{margin:30px 40px 40px 10px;}
+.content-video video{width:100%;}
+.content-video-title{background: url(../images/green_video.png)no-repeat left bottom;}
+.content-video-title span{;color: #a1a0a0;line-height:40px; display: inline-block;}
+.content-video-both{padding:0 10px 0 20px;background: #282828;}
+.content-video-text:after{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
+.content-video-li{float:left;padding:0 15px; margin: 20px 0 15px;cursor: pointer;    width: 24%;}
+.content-video-text{margin: 0 -15px;}
+.content-video-li>p{font-size: 12px;color:white;margin-top:10px;}
+.video-li-img img{width: 100%;}
+.video-li-img{position: relative;}
+.video-li-img p{display:none;position: absolute;bottom:0;line-height: 26px;font-size: 12px;color:white;padding-left:20px; }
+.video-li-img i{
+    position: absolute;
+    width: 0;
+    top: 50%;
+    margin-top: -5px;
+    left: 6px;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #009d85;
+    border-bottom: 6px solid transparent;
+}
+
+.content-Honor:after{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden;}
+.content-Honor>div{
+    margin-bottom:30px ;
+    padding-right: 30px;
+    padding-left: 30px;}
+
+.content-Honor{
+    margin:0 10px 0 -20px ;
+    padding: 35px 0 0 40px;
+}  
+
+.content-Honor img{width:100%;}  
+/*企业荣誉*/
+
+
+@media (max-width: 1268px){
+
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 1024px){
+
+    .about-img-text img{width:100%;}
+}
+
+@media (max-width: 992px){
+
+    .about-img-text img{width:100%;}
+
+}
+
+
+@media (max-width: 768px) {
+.content-video-li{
+	 width: 33%;
+    min-width: 100px;
+}
+.about-img-text img{width:100%;}
+}
+
+
+@media (max-width: 767px) {
+
+    .content-video-li {
+    float: left;
+    padding: 0 15px;
+    margin: 20px 0 15px;
+    cursor: pointer;
+    width: 33%;
+}
+.content-video {
+    margin: 30px 15px 10px;
+}
+
+.content-video-both {
+    padding: 0 10px 0 10px;
+    background: #282828;
+}
+
+.about-img {
+            height: 103px;
+        background-size: cover;
+    width: 100%;
+   
+}
+.about-img-text{
+    width: 50%;
+    margin:68px auto 0;
+}
+
+.about-con-cen{
+    margin:0 15px;
+    text-align:justify;
+}
+
+.content-abstract-text{
+    margin:0 15px;
+}
+
+.about-abstract-both{
+    margin:0 15px;
+}
+
+.about-abstract-text {
+
+    margin: 30px 15px 0;
+    
+}
+
+.content-Honor {
+    margin: 0 0 0 0;
+    padding: 35px 0 0 0px;
+}
+
+.content-Honor>div {
+    margin-bottom: 30px;
+     padding-right: 15px;
+     padding-left: 15px; 
+}
+
+.about-con-text {
+     margin-top: 20px; 
+}
+.about-img-text img{width:100%;}
+}
+
+
+
+@media (max-width: 360px) {
+
+
+
+}
+
+
+@media (min-width: 992px){
+
+
+}
+
+
+
+
+
